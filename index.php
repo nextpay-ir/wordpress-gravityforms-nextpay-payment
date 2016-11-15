@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by NextPay.ir
  * author: Nextpay Company
@@ -9,16 +10,15 @@
  * Email: info@nextpay.ir
  * @copyright 2016
  * @package NextPay_Gateway
- * @version 1.0
+ * @version 2.2.1
  */
 /*
-  Plugin Name: افزونه پرداخت امن نکست پی برای گراویتی فرم
+  Plugin Name: درگاه پرداخت امن نکست پی برای گراویتی فرم
   Plugin URI: http://www.nextpay.ir
   Description: افزونه درگاه پرداخت نکست پی برای فرم ساز پیشرفته گراویتی فرم
   Author: Nextpay Company
-  Version: 1.0
+  Version: 2.2.1
   Author URI: http://www.nextpay.ir
 */
-
-if (!defined( 'ABSPATH' )) exit;
+if (!defined('ABSPATH')) exit;
 require_once('nextpay.php');
