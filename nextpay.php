@@ -2730,7 +2730,7 @@ class GFNextPay_nextpayStd
                     $Message = '';
                     $Status = 'cancelled';
                 }
-                $Transaction_ID = !empty($Result->RefID) ? $Result->RefID : '-';
+                $Transaction_ID = !empty($trans_id) ? $trans_id : '-';
                 //End of NextPay
             } else {
                 $Status = 'completed';
