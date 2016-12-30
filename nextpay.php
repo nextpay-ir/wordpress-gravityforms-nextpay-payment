@@ -2572,6 +2572,9 @@ class GFNextPay_nextpayStd
 	    );
 	    $Result = $Result->TokenGeneratorResult;
 	    if(intval($Result->code) == -1){
+
+
+            GFAPI::update_entry_property($entry['id'], "transaction_id", $Result->trans_id);
 		    
 		    $Payment_URL = 'http://api.nextpay.org/gateway/payment/'.$Result->trans_id;
 
