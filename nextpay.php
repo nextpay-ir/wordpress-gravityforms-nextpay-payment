@@ -2703,7 +2703,7 @@ class GFNextPay_nextpayStd
 
                     try {
 
-                        $client = new SoapClient('http://api.nextpay.org/gateway/verify.wsdl', array('encoding' => 'UTF-8')); 
+                        $client = new SoapClient('https://api.nextpay.org/gateway/verify.wsdl', array('encoding' => 'UTF-8')); 
 						
 			$Result = $client->PaymentVerification(
 				array(
