@@ -2559,7 +2559,7 @@ class GFNextPay_nextpayStd
 
         try {
 
-            $client = new SoapClient('http://api.nextpay.org/gateway/token.wsdl', array('encoding' => 'UTF-8'));
+            $client = new SoapClient('https://api.nextpay.org/gateway/token.wsdl', array('encoding' => 'UTF-8'));
 	    $api_key = self::get_api_key();  
 		    
 	    $Result = $client->TokenGenerator(
@@ -2576,7 +2576,7 @@ class GFNextPay_nextpayStd
 
             GFAPI::update_entry_property($entry['id'], "transaction_id", $Result->trans_id);
 		    
-		    $Payment_URL = 'http://api.nextpay.org/gateway/payment/'.$Result->trans_id;
+		    $Payment_URL = 'https://api.nextpay.org/gateway/payment/'.$Result->trans_id;
 
 		    if ( $valid_checker ) {
 			    return true;
